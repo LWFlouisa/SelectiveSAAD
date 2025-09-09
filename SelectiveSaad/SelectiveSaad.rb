@@ -686,35 +686,3 @@ module SaadSelective
     end
   end
 end
-
-def competitive_selection
-  SaadSelective::CompetitiveSelection.get_player_statistics(:dogs,           "are man's best friend.",
-                                                            :cats,           "are the cleanest pets.",
-                                                            :gerbils, "are not using hamster wheels.")
-
-  SaadSelective::CompetitiveSelection.get_gribatomaton_statistics(:dogs,           "are man's best friend.",
-                                                                  :cats,           "are the cleanest pets.",
-                                                                  :gerbils, "are not using hamster wheels.")
-
-  SaadSelective::CompetitiveSelection.get_enemy_statistics(:dogs,           "are man's best friend.",
-                                                           :cats,           "are the cleanest pets.",
-                                                           :gerbils, "are not using hamster wheels.")
-                                                           
-  SaadSelective::CompetitiveSelection.decrement_confidence
-end
-
-def coordinative_selective
-  SaadSelective::CoordinatedSelection.get_player_statistics(:dogs,           "are man's best friend.",
-                                                            :cats,           "are the cleanest pets.",
-                                                            :gerbils, "are not using hamster wheels.")
-
-  SaadSelective::CoordinatedSelection.get_gribatomaton_statistics(:dogs,           "are man's best friend.",
-                                                                  :cats,           "are the cleanest pets.",
-                                                                  :gerbils, "are not using hamster wheels.")
-
-  SaadSelective::CoordinatedSelection.get_enemy_statistics(:dogs,           "are man's best friend.",
-                                                           :cats,           "are the cleanest pets.",
-                                                           :gerbils, "are not using hamster wheels.")
-                                                           
-  SaadSelective::CoordinatedSelection.decrement_confidence
-end
